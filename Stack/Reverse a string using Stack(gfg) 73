@@ -1,0 +1,16 @@
+https://www.geeksforgeeks.org/problems/reverse-a-string-using-stack/1
+
+#2nd approach(concatenation + approach) 
+//in less lines of code
+
+  string revStr(string s)
+  {
+    string temp="";
+    //traverse string s
+    for(auto ch:s)
+    //add before instead of adding after
+      temp=s[i]+temp;
+    return temp;
+    //copy to change the original string s
+    //or s=temp; return s;
+  }
